@@ -2,8 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
-import os
-import matplotlib.font_manager as fm 
+import matplotlib.font_manager as fm
+
+# 한글 폰트 설정
+font_path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'  # 시스템에 설치된 폰트 경로
+fontprop = fm.FontProperties(fname=font_path, size=12)
+plt.rc('font', family=fontprop.get_name())  # 전체 그래프에 폰트 설정
 
 # 페이지 기본 설정
 st.set_page_config(page_title="전력량 계산 및 가구별 전력량 시각화", layout="wide")
