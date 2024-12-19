@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import matplotlib.font_manager as fm
 
-plt.rcParams['font.family'] ='Malgun Gothic'
+plt.rcParams['font.family'] ='Apple Gothic'
 plt.rcParams['axes.unicode_minus'] =False
 
 # 페이지 기본 설정
