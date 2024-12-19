@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import matplotlib.font_manager as fm
 
-plt.rcParams['font.family'] ='Apple Gothic'
-plt.rcParams['axes.unicode_minus'] =False
+plt.rc('font', family='NanumGothicOTF') # For MacOS
+plt.rc('font', family='NanumGothic') # For Windows
+%matplotlib inline
 
 # 페이지 기본 설정
 st.set_page_config(page_title="전력량 계산 및 가구별 전력량 시각화", layout="wide")
