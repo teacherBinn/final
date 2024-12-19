@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import koreanize_matplotlib
 from matplotlib.ticker import MaxNLocator
+import koreanize_matplotlib
 
 # 페이지 기본 설정
 st.set_page_config(page_title="전력량 계산 및 가구별 전력량 시각화", layout="wide")
