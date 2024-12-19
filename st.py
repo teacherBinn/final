@@ -5,7 +5,7 @@ from matplotlib.ticker import MaxNLocator
 import matplotlib.font_manager as fm
 
 # 한글 폰트 설정
-font_path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'  # 시스템에 설치된 폰트 경로
+font_path = 'Nanum_Gothic'  # 시스템에 설치된 폰트 경로
 fontprop = fm.FontProperties(fname=font_path, size=12)
 plt.rc('font', family=fontprop.get_name())  # 전체 그래프에 폰트 설정
 
